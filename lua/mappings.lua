@@ -29,3 +29,8 @@ map('n', "<F8>", "<cmd>lua require'dap'.step_into()<CR>")
 map('n', "<F9>", "<cmd>lua require'dap'.eval()<CR>")
 
 map('n', "<F2>", "<cmd>NvimTreeToggle<CR>")
+
+map('n', "<leader>w", "<cmd>write<CR>")
+map('n', "<leader>o", "<cmd>q<CR>")
+
+map('n', "P", "$p")
