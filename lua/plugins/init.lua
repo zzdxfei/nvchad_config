@@ -1,4 +1,15 @@
 return {
+  -- DAP
+  {"nvim-neotest/nvim-nio"},
+  {"theHamsta/nvim-dap-virtual-text"},
+  {"rcarriga/nvim-dap-ui"},
+  {"mfussenegger/nvim-dap-python"},
+  {"mfussenegger/nvim-dap",
+    config = function()
+      require("configs.dap").setup()
+    end 
+  },
+
   {
     "stevearc/conform.nvim",
     -- event = 'BufWritePre', -- uncomment for format on save
@@ -13,13 +24,14 @@ return {
     end,
   },
 
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  {
+  	"nvim-treesitter/nvim-treesitter",
+  	opts = {
+  		ensure_installed = {
+  			"vim", "lua", "vimdoc", "cpp", "python"
+  		},
+  	},
+  },
+
+  {"folke/which-key.nvim", enabled = false },
 }
