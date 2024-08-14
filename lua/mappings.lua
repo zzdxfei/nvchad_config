@@ -34,3 +34,11 @@ map('n', "<leader>w", "<cmd>write<CR>")
 map('n', "<leader>o", "<cmd>q<CR>")
 
 map('n', "P", "$p")
+
+map('n', "<leader>t", "<cmd>Telescope<CR>")
+
+map('n', "<leader>d", "<cmd>lua vim.lsp.buf.implementation()<CR>")
+map('n', "<leader>c", "<cmd>lua vim.lsp.buf.declaration()<CR>")
+
+map('n', "<C-e>", "2<C-e>")
+map('n', "<C-y>", "2<C-y>")
