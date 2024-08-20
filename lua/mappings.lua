@@ -19,6 +19,9 @@ map("n", "`", "<ESC>")
 map("n", "<ESC>", "`")
 map("c", "`", "<C-U><CR>")
 map("c", "<ESC>", "`")
+map("t", "`", [[<C-\><C-n>]])
+map("t", "<Esc>", "`")
+map("n", "P", "$p")
 
 map('n', "<leader>b", "<cmd>lua require'dap'.toggle_breakpoint()<CR>")
 
@@ -42,3 +45,11 @@ map('n', "<leader>c", "<cmd>lua vim.lsp.buf.declaration()<CR>")
 
 map('n', "<C-e>", "2<C-e>")
 map('n', "<C-y>", "2<C-y>")
+
+map('n', "<leader>wk", "")
+map('n', "<leader>wK", "")
+
+map('n', "<Left>", "<cmd>vertical resize -2<CR>")
+map('n', "<Right>", "<cmd>vertical resize +2<CR>")
+map('n', "<Up>", "<cmd>resize +2<CR>")
+map('n', "<Down>", "<cmd>resize -2<CR>")
