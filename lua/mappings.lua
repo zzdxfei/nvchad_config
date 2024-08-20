@@ -29,7 +29,7 @@ map('n', "<F5>", "<cmd>lua require'dap'.continue()<CR>")
 map('n', "<F6>", "<cmd>lua require'dap'.run_to_cursor()<CR>")
 map('n', "<F7>", "<cmd>lua require'dap'.step_over()<CR>")
 map('n', "<F8>", "<cmd>lua require'dap'.step_into()<CR>")
-map('n', "<F9>", "<cmd>lua require'dap'.eval()<CR>")
+map('n', "<F9>", "<cmd>lua require'dapui'.eval()<CR>")
 
 map('n', "<F2>", "<cmd>NvimTreeToggle<CR>")
 

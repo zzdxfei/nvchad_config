@@ -32,6 +32,7 @@ end
 local function configure_exts()
   require("nvim-dap-virtual-text").setup {
     commented = true,
+    virt_text_pos = 'eol',
     display_callback = function(variable, _buf, _stackframe, _node)
       return variable.value
     end,
